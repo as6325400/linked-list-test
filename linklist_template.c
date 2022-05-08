@@ -150,14 +150,7 @@ Node *nodeReverse(Node *begin){
     begin = current;
     return begin;                  
 }
-//尚有缺陷
-void qpop(Node *begin){
-    while (begin->next->next!= NULL)
-        begin=begin->next;
-    free(begin->next);
-    begin->next=NULL;
-    return;
-}
+
 //傳入link list首的adress
 void Clear(Node **begin){
     while (*begin != NULL) {            
